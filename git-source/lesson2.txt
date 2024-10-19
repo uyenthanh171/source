@@ -1,0 +1,20 @@
+1. Giải thích câu lệnh:
+Git init: Dùng để khởi tạo một git repository mới. Sử dụng câu lệnh Git init khi bắt đầu tạo một dự mới. Git sẽ tạo ra một thư mục con có tên là .git để theo dõi các phiên bản của dự án của bạn.
+Git add <file name>: Dùng để thêm một tệp cụ thể đã thay đổi vào khu vực stagging area. 
+Git add .: Dùng để thêm tất cả các tệp đã thay đổi vào khu vực stagging erea.
+Git commit -m "message": Tạo một commit mới với message mô tả các thay đổi
+2.
+a. Tạo 3 file: file1, file2, file3 --> file1, file2, file3: máy local
+b. Chạy lệnh: git init --> file1, file2, file3: working directory
+c. Chạy lệnh: git commit -m”init project” --> file1, file2, file3: repository
+d. Chạy lệnh: git add file1
+	--> file1: stagging area
+	--> file2, file3: working directory
+e. Chạy lệnh: git commit -m”add file1”
+	--> file1: repository
+	--> file2, file3: working directory
+f. Chạy lệnh: git add file1 
+	--> file1: stagging area
+	--> file2, file3: working directory
+
+
