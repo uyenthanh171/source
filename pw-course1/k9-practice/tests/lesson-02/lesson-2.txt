@@ -1,0 +1,49 @@
+GIT
+--------------------------------------------------------------------------------------------------------------
+Tại repo git-course đã tạo từ lesson 1, hãy tạo file lesson-2.txt để trả lời cho các câu hỏi dưới đây:
+1. Giải thích các câu lệnh: git init, git add <file_name>, git add ., git commit -m “message”.
+- git init:  Khởi tạo một Thư mục Git mới (Working Directory), chứa các file tạo mới chưa được commit (untracked files).
+- git add <file_name>: Chuyển file có tên <file_name> trong Thư mục Git mới tạo (untracked files) sang trạng thái sẵn sàng để commit (Stagging Area).
+- git add .: chuyển tất cả các file (untracked files) trong Thư mục Git mới tạo sang trạng thái sẵn sằng để commit (Stagging Area).
+- git commit -m"message": chuyển tất cả các file đang ở trạng thái sẵn sàng commit (stagging), sang trạng thái commit (tạo một phiên bản - Repository)
+--> sẵn sàng cho bước push lên Github tiếp theo. 
+
+
+2. Hãy tưởng tượng có 1 folder lesson-2 mới được tạo. Hãy liệt kê các file theo từng vùng sau khi thao tác một loạt các lệnh sau (sẽ rất tuyệt nếu bạn không chạy lệnh trên máy thật, mà bạn suy nghĩ trong đầu để ra được kết quả; bạn sẽ nhớ rất lâu đấy ^^):
+a. Tạo 3 file: file1, file2, file3
+    - Local: file1, file2, file3
+    - Working directory:
+    - Staging area:
+    - Repository: 
+b. Chạy lệnh: git init
+    - Local: 
+    - Working directory: file1, file2, file3
+    - Staging area:
+    - Repository: 
+c. Chạy lệnh: git commit -m”init project”
+    - Local: 
+    - Working directory: file1, file2, file3
+    - Staging area:
+    - Repository: 
+d. Chạy lệnh: git add file1
+    - Local: 
+    - Working directory: file2, file3
+    - Staging area: file1
+    - Repository: 
+e. Chạy lệnh: git commit -m”add file1”	
+    - Local: 
+    - Working directory: file2, file3
+    - Staging area: 
+    - Repository: file1
+f. Chạy lệnh: git add file 
+    - Local: 
+    - Working directory: file2, file3
+    - Staging area: 
+    - Repository: file1
+
+
+
+/*
+ - Nguoi lam dung: Ruby, Phuong
+ - Nguoi can luu y: Tu, Nam, Hanh
+*/

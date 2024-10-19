@@ -1,0 +1,107 @@
+I. Git
+    - Xem lịch sử commit: git log
+    - Thay đổi message: git commit --amend
+                        git commit --amend -m"<message>"
+    - Chuyển file từ vùng staging về vùng working directory: git restore --stage <file>
+    - Chuyển file từ vùng Repository về vùng working directory: git reset HEAD~1 (1 tương ứng với 1 commit mới nhất) 
+    - Tạo nhánh (branch) - branch để tạo ra vùng làm việc mới không ảnh hưởng đến vùng làm việc đã ổn định
+        . git branch <ten_nhanh> : Tạo nhánh mới
+        . git checkout <ten_nhanh> :  Chuyển qua nhánh đã tạo
+        . git checkout -b <ten_nhanh> : Tạo và chuyển qua nhánh đã tạo 
+        *Note*: Luôn tạo branch mới trước khi thực hiện một lệnh copy từ internet.
+    - .gitignore: Dùng để bỏ qua những files/folders không cần git theo dõi
+II. Javascript
+    1. Conventions:
+        - snake-case:
+        - kebab-case: tên file
+        - camelCase: tên biến
+        - PascalCase: tên class
+    
+    2. Console.log 
+        console.log('   ', variables); ---> nếu variables là số thì thể hiện số
+        console.log("   " + variables); ---> String type
+        console.log(`${variables}`);    
+
+    3. Object
+        let/const <ten_object> = {
+            <key> : <value>
+        }
+        get value of key: object.key, object["key"]
+        change value of key: object.key = "<new_value>",
+        multiples objects: object.key1.key2, object["key1"]["key2"]
+    
+    4. Logical operator
+        &&: cả 2 vế mệnh đề đúng thì thực hiện tiếp câu lệnh
+        ||: 1 trong 2 vế mệnh đề đúng thì thực hiện tiếp câu lệnh (xét từ trái qua phải)
+        !: đảo ngược giá trị mệnh đề (false -> true, true -> false)
+
+    5. Array
+        Khai báo mảng: let/const array = []
+        Độ dài mảng: array.length
+        Lấy phần tử theo index: [0],[1],[2]
+
+    6. Function
+        function <nameFunction>(parameter) = { //code }
+        nameFunction - camelCase
+        parameter (option): tham số truyền vào
+        return value: trả về giá trị của hàm
+
+    7. Phạm vi của biến
+        var: global scope
+        let: internal scope {}
+    
+    8. == và !=
+        So sánh kiểu lỏng lẻo
+        Không quan tâm kiểu dữ liệu 
+
+    9. Advanced condition
+        if(<condition>) {
+
+        }else {
+
+        }
+
+        if(<condition>){
+
+        }else if(<condition>){
+
+        }else {
+
+        }
+
+        switch(){
+            case a:
+            //code
+            break;
+            case b:
+            //code 
+            break;
+            default:
+        }
+
+    10. Advanced loop
+        break: thoát ra khỏi vòng lặp
+        continue: tiếp tục vòng lặp bỏ qua đoạn code phía sau
+
+        for(let index in object){}: dùng cho string, array, object và lặp lại properties 
+        Ex: 
+            for(let index in [a,b,c]){
+                console.log(index) //0,1,2
+            }
+
+        array.forEach(index => {<index do something>}): lặp lại các phần tử trong mảng
+        Ex:
+            ['a', 'b', 'c'].forEach(
+                val => console.log(val)     // a, b, c (array values)
+            );
+
+            ['a', 'b', 'c'].forEach(
+                (val, i) => console.log(i)  // 0, 1, 2 (array indexes)
+            );
+
+        for(let index of array){}: dùng cho string, array, object và ngược lại với for...in...
+        Ex: 
+            for(let index of [a,b,c]){
+                console.log(index) //a,b,c
+            }
+ 

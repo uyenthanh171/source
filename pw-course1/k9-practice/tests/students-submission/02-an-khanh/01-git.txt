@@ -1,0 +1,9 @@
+a. git clone <url>: lấy dự án từ remote repository đã có sẵn về máy của bạn (Local)
+
+b. git branch <branch_name>: tạo 1 nhánh mới với tên <branch_name> và copy toàn bộ code từ nhánh đang đứng
+
+c. git checkout <branch_name>: switch sang nhánh <branch_name>
+
+d. git checkout -b <branch_name>: tạo 1 nhánh mới, copy toàn bộ code từ nhánh đang đứng và đồng thời switch sang nhánh mới được tạo <branch_name>
+
+e. git pull origin master: kéo toàn bộ dữ liệu đã thay đổi mới nhất từ nhánh master về máy local

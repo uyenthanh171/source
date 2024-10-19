@@ -1,0 +1,4 @@
+Giải thích câu lệnh git stash và git stash pop
+- git stash: dùng để tạm thời lưu các thay đổi hiện tại trong working directory 
+và staging area mà chưa muốn commit
+- git stash pop: dùng để khôi phục lại những thay đổi đã được lưu trước đó bằng git stash

@@ -1,0 +1,57 @@
+Tạo file 01-git-answer.txt trong thư mục để trả lời câu hỏi sau: 
+giải thích câu lệnh 
+git commit --amend: 
+-> để thay đổi nội dung commit nào đó
+git reset HEAD~3
+-> chuyển commit thứ 3 từ repo về vùng working
+==============
+## Bài 2 Liệt kê các commit và các file theo từng vùng ở các branch: main, feature-A, feature-B sau khi thao tác các lệnh sau: 
+a. Tạo thư mục lesson-8 
+-> branch: main
+
+b. Tạo file: file1, file2, file3 
+-> branch: main
+-> Vùng: file 1, file 2, file 3 vùng working
+
+c. Chạy lệnh: git init 
+-> branch: main
+-> Vùng: file 1, file 2, file 3 vùng working
+
+d. Chạy lệnh: git add file1 
+-> branch: main
+file 1: vùng staging
+file 2, file 3 vùng working
+
+e. Chạy lệnh: git commit -m”init project” 
+-> branch: main
+file 1: vùng repo
+file 2, file 3 vùng working
+
+f. Chạy lệnh: git checkout -b feat/feature-A 
+-> branch: feature-A
+-> Vùng: file 1, file 2, file 3 vùng working
+
+g. Chạy lệnh: git add file2 
+-> branch: feature-A
+-> Vùng: file 1, file 3 vùng working của branch feature-A
+file 2: vùng staging
+
+h. Chạy lệnh: git commit -m”feat: add file2” 
+-> branch: feature-A
+-> Vùng: file 1, file 3 vùng working 
+file 2: vùng repo của branch feature-A
+
+i. Chạy lệnh: git add file3 
+-> branch: feature-A
+-> Vùng: file 1, vùng working
+file 2: vùng repo của branch feature-A
+file 3: vùng staging của branch feature-A
+
+j. Chạy lệnh: git commit -m”feat: add file3” 
+-> branch: feature-A
+-> Vùng: file 1, vùng working
+file 2, file3: vùng repo của branch feature-A
+
+k. Chạy lệnh: git checkout -b feat/feature-B 
+-> branch: feature-A
+->  Vùng: file 1, file 3 vùng working của branch feature B

@@ -1,0 +1,4 @@
+Giải thích câu lệnh git stash, git stash pop.
+- git stash: Lưu trữ lại công việc đang làm, chỉ lưu các công việc trên những file trước đó đã được tracked (đã được lên vùng repo repository)
+- git stash save --all: lưu công việc đang làm (kể cả file chưa tracked)
+- git stash pop: Unstash nội dung stash mới nhất.Sau khi unstash xong thì xóa stash đó đi.

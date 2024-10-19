@@ -1,0 +1,17 @@
+Giải thích các câu lệnh: 
+a. git clone <url> : tải xuống tất cả các file và dữ liệu của 1 repository thông qua URL và tạo ra một bản sao tương ứng trong thư mục hiện tại
+VD: git clone git@github.com:playwrightvn/k9-practice.git
+
+b. git branch <branch_name> : Tạo một nhánh mới trong repository hiện tại với tên là `<branch_name>`. 
+Nhánh mới này sẽ được tạo ra từ nhánh hiện tại (hoặc main/master nếu không có nhánh hiện tại).
+VD: Ví dụ: git branch feat/sep-29
+
+c. git checkout <branch_name> : switch di chuyển sang nhánh có name tương ứng và làm cho nhánh hiện tại là nhánh đó. Nếu nhánh đó chưa được tạo ra, Git sẽ báo lỗi.
+VD: git checkout feat/sep-29
+
+d. git checkout -b <branch_name> : Tạo một nhánh mới với tên là `<branch_name>` và di chuyển đến nhánh đó. Ngay sau khi tạo, nhánh mới sẽ trở thành nhánh hiện tại.
+VD: git checkout -b feat/sep-29
+
+e. git pull origin master : Tải xuống các thay đổi từ nhánh master trên server (origin) và áp dụng chúng vào nhánh hiện tại. Nếu có conflicts, Git sẽ hỏi để xử lý.
+VD: git pull origin feat/sep-29
+

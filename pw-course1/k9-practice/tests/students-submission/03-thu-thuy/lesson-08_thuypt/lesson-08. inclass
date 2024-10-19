@@ -1,0 +1,49 @@
+import { expect, test } from '@playwright/test';
+
+test.describe("Authentication", async () => {
+    let xpath;
+    test.beforeAll(async () => {
+        // lăp lại xpath, 
+        xpath = {
+            inputUserName: "",
+            inputPw: 
+     }
+    });
+    test.beforeEach(async ({ page }) => {
+        // Go to login page
+        await page.goto("");
+    });
+    test("Login fail", async ({ page }) => {
+        {
+            //Step1: input username and password
+            await test.step("Input username and password", async () => {
+                // Nhập Username, pass
+                await page.locator("<xpath>").fill("username");
+                //Cách khác dùng hooks before all:
+                await page.locator(xpath.inputUserName).fill("username");
+
+                await page.locator(xpath.inputPw).fill("fdsf");
+                // kiểm tra 2 ô input được nhập
+
+                const inputUserName = await page.locator("<xpath").
+                    inputValue();
+                const inputPw = await page.locator("<xpath").
+                    inputValue();
+                // Expect trong testcase
+                expect(inputUserName).toEqual("k6-mentor");
+                expect(inputPw).toEqual("fsdf");
+            });
+        }
+    });
+
+    test.afterEach(async () => {
+
+    });
+    test.afterAll(async () => {
+
+    });
+
+    test("Login pass", async () => {
+
+    });
+});

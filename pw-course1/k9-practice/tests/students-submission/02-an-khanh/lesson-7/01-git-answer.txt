@@ -1,0 +1,6 @@
+git stash: lưu các công việc đang làm vào 1 vùng nhớ "tạm"
+
+git stash pop: lấy ra các công việc đang làm dang dở trong vùng nhớ "tạm"
+
+*Note: khi checkout về nhánh khác sẽ đem những công việc ở vùng nhớ tạm về nhánh checkout
+

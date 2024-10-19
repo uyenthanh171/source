@@ -1,0 +1,2 @@
+git stash: lưu trữ các công việc đang làm vào một vùng nhớ tạm.
+git stash pop: Từ vùng nhớ tạm lấy ra các công việc đang làm dở trước đó.

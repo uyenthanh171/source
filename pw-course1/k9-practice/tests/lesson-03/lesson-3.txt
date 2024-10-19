@@ -1,0 +1,4 @@
+git commit --amend: vào giao diện thay đổi message của commit gần nhất.
+git commit --amend -m"<message>": thay đổi message của commit gần nhất trực tiếp mà không cần vào giao diện.
+git restore --staged <file>: bỏ <file> từ vùng staging về vùng working directory.
+git reset HEAD~1: đưa các file changes của 1 commit gần nhất từ vùng repository về vùng working directory.  

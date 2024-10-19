@@ -1,0 +1,4 @@
+- Câu lệnh cài đặt email:
+git config --global user.email "<email>"
+- Câu lệnh cài đặt name:
+git config --global user.name "<name>"
